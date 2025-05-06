@@ -1,0 +1,10 @@
+.DS_Store
+/data/ruv_data
+data/unintegrated.h5ad
+/plots
+scripts/get_adata.ipynb
+scripts/get_ruv_data.R
+scripts/ruv_test_1.ipynb
+data/2_markers.csv
+data/2_markers.h5ad
+scripts/test_1.ipynb
