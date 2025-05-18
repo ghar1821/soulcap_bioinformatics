@@ -8,3 +8,6 @@ scripts/ruv_test_1.ipynb
 data/2_markers.csv
 data/2_markers.h5ad
 scripts/test_1.ipynb
+data/spleen_b_cells_cd4em_mouse1.csv
+data/spleen_nk_cd4em_cdc_mouse1.csv
+*.pyc
