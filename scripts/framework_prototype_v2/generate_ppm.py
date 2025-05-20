@@ -69,7 +69,8 @@ def compare_ppms(
     df_new: pd.DataFrame,
     ppm_new_bin_df: pd.DataFrame,
     x_axis: str,
-    y_axis: str
+    y_axis: str,
+    thres=1e-7
 ) -> None:
     """
     Visualizes and compares reference and new population data alongside their corresponding PPM bin data.
@@ -122,6 +123,7 @@ def compare_ppms(
         weights=ppm_ref_bin_df["prob"],
         fill=True,      # Optional: fill the contours
         cmap="viridis",  # Optional: color map
+        thresh=thres,
         ax=axs[0, 1]
     ).set_title("PPM Reference data")
 
@@ -140,6 +142,7 @@ def compare_ppms(
         weights=ppm_new_bin_df["prob"],
         fill=True,      # Optional: fill the contours
         cmap="viridis",  # Optional: color map
+        thresh=thres,
         ax=axs[1, 1]
     ).set_title("PPM New data")
 
